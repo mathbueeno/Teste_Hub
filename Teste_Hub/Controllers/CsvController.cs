@@ -25,15 +25,19 @@ namespace Teste_Hub.Controllers
 
 
 		[HttpGet]
-		public ActionResult<IEnumerable<CsvModel>> CSV()
+		public ActionResult<IEnumerable<CsvModel>> CSV(IFormFile planilha)
 		{
 
-			var csv = _leitorCSV.Leitura_CSV().OfType<LeitorCSV>().ToList();
+			List<dynamic> csv = _leitorCSV.LeituraCSV();
 			List<CsvModel> pedidos = new List<CsvModel>();
 
-			int[] array = { 1, 2, 3, 4, 5 };
+			return Ok();
 
-			return pedidos;
+	
+
+
+
+			//return pedidos;
 
 			//return Ok(csv);
 		}
