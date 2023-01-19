@@ -5,7 +5,7 @@ namespace Teste_Hub.Models
 {
 	public class ClienteModel
 	{
-		[DatabaseGenerated(DatabaseGeneratedOption.None)]
+		
 		[Key]
 		public long CpfCnpj { get; set; }
 		public string Nome { get; set; }

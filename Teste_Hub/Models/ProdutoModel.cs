@@ -8,7 +8,7 @@ namespace Teste_Hub.Models
 		[Key]
 		public long Id { get; set; }
 		public string Descricao { get; set; }
-		[DisplayFormat(DataFormatString = "{0:C}")]
+		
 		public double Valor { get; set; }
 		public CategoriaEnum Categoria { get; set; }
 	}
