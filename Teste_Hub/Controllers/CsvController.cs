@@ -37,9 +37,7 @@ namespace Teste_Hub.Controllers
 
 
 
-			//return pedidos;
-
-			//return Ok(csv);
+			
 		}
 
 		
